@@ -1,7 +1,10 @@
 <x-layoutApp>
   <div class="flex justify-center items-center min-h-screen">
-    <div id="app" class="bg-blue-500">
+    <div id="app" class="">
+      <header-component></header-component>
       <h1>Hallo Word</h1>
+      <example-component></example-component>
+      <footer-component></footer-component>
     </div>
   </div>
 
