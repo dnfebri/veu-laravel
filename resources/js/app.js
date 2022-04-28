@@ -2,29 +2,30 @@ require('./bootstrap');
 
 window.Vue = require('vue').default;
 import Vue from 'vue';
-// import VueRouter from 'vue-router'
-// Vue.use(VueRouter)
+import VueRouter from 'vue-router'
+Vue.use(VueRouter)
 
 Vue.component('header-component', require('./components/header.vue').default);
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('footer-component', require('./components/footer.vue').default);
 
-const Home = require('./view/Home.vue')
-const About = require('./view/About.vue');
-const { default: VueRouter } = require('vue-router');
+const Home = require('./view/Home.vue').default
+const About = require('./view/About.vue').default
+// const { default: VueRouter } = require('vue-router')
 
 const routes = [
     {
-        path: '',
-        componen: Home
+        path: '/main',
+        component: Home
     },
     {
         path: '/about',
-        componen: About
-    },
+        component: About
+    }
 ]
 
-const route = new VueRouter({
+const router = new VueRouter({
+    mode: 'history',
     routes
 })
 
@@ -33,5 +34,5 @@ const app = new Vue({
     data: {
         title: 'Bljr Vue Laravel'
     },
-    route
+    router
 });
