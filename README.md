@@ -7,6 +7,6 @@
 - video #4 - Render View : Done
   - setup components.layoutApp : Done
 - video #5 - Membuat Componen : Done
-- video #6 - Render Data : 
+- video #6 - Render Data : Done
 - video #7 - Route Configurasi : 
 - video #8 - Route Link Dan View : 
