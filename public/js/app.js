@@ -2166,7 +2166,10 @@ Vue.component('footer-component', (__webpack_require__(/*! ./components/footer.v
  */
 
 var app = new Vue({
-  el: '#app'
+  el: '#app',
+  data: {
+    title: 'Bljr Vue Laravel'
+  }
 });
 
 /***/ }),

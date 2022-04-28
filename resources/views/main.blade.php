@@ -2,7 +2,7 @@
   <div class="flex justify-center items-center min-h-screen">
     <div id="app" class="">
       <header-component></header-component>
-      <h1>Hallo Word</h1>
+      <h1>Hallo, @{{ title }}</h1>
       <example-component></example-component>
       <footer-component></footer-component>
     </div>
