@@ -9,4 +9,4 @@
 - video #5 - Membuat Componen : Done
 - video #6 - Render Data : Done
 - video #7 - Route Configurasi : Done
-- video #8 - Route Link Dan View : 
+- video #8 - Route Link Dan View : Done
