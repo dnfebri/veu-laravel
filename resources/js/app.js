@@ -9,9 +9,10 @@ Vue.component('header-component', require('./components/header.vue').default);
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('footer-component', require('./components/footer.vue').default);
 
+// const { default: VueRouter } = require('vue-router')
 const Home = require('./view/Home.vue').default
 const About = require('./view/About.vue').default
-// const { default: VueRouter } = require('vue-router')
+const NotFound = require('./view/NotFound.vue').default
 
 const routes = [
     {
@@ -21,11 +22,15 @@ const routes = [
     {
         path: '/about',
         component: About
+    },
+    {
+        path: '*',
+        component: NotFound
     }
 ]
 
 const router = new VueRouter({
-    mode: 'history',
+    mode: 'history', //Untuk menghilangkan # di URL
     routes
 })
 
