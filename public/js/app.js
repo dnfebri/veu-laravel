@@ -2140,45 +2140,21 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
-/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
-/* harmony import */ var _view_NotFound_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./view/NotFound.vue */ "./resources/js/view/NotFound.vue");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
+/* harmony import */ var _router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./router */ "./resources/js/router/index.js");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
 
-vue__WEBPACK_IMPORTED_MODULE_0__["default"].use(vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]);
-vue__WEBPACK_IMPORTED_MODULE_0__["default"].component('header-component', (__webpack_require__(/*! ./components/header.vue */ "./resources/js/components/header.vue")["default"]));
-vue__WEBPACK_IMPORTED_MODULE_0__["default"].component('example-component', (__webpack_require__(/*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue")["default"]));
-vue__WEBPACK_IMPORTED_MODULE_0__["default"].component('footer-component', (__webpack_require__(/*! ./components/footer.vue */ "./resources/js/components/footer.vue")["default"])); // const { default: VueRouter } = require('vue-router')
-
-var Home = (__webpack_require__(/*! ./view/Home.vue */ "./resources/js/view/Home.vue")["default"]);
-
-var About = (__webpack_require__(/*! ./view/About.vue */ "./resources/js/view/About.vue")["default"]); // const NotFound = require('./view/NotFound.vue').default
-
-
-
-var routes = [{
-  path: '/main',
-  component: Home
-}, {
-  path: '/about',
-  component: About
-}, {
-  path: '*',
-  component: _view_NotFound_vue__WEBPACK_IMPORTED_MODULE_2__["default"]
-}];
-var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
-  mode: 'history',
-  //Untuk menghilangkan # di URL
-  routes: routes
-});
-var app = new vue__WEBPACK_IMPORTED_MODULE_0__["default"]({
+vue__WEBPACK_IMPORTED_MODULE_1__["default"].component('header-component', (__webpack_require__(/*! ./components/header.vue */ "./resources/js/components/header.vue")["default"]));
+vue__WEBPACK_IMPORTED_MODULE_1__["default"].component('example-component', (__webpack_require__(/*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue")["default"]));
+vue__WEBPACK_IMPORTED_MODULE_1__["default"].component('footer-component', (__webpack_require__(/*! ./components/footer.vue */ "./resources/js/components/footer.vue")["default"]));
+var app = new vue__WEBPACK_IMPORTED_MODULE_1__["default"]({
   el: '#app',
   data: {
     title: 'Bljr Vue Laravel'
   },
-  router: router
+  router: _router__WEBPACK_IMPORTED_MODULE_0__["default"]
 });
 
 /***/ }),
@@ -2211,6 +2187,48 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/router/index.js":
+/*!**************************************!*\
+  !*** ./resources/js/router/index.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
+/* harmony import */ var _view_NotFound_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../view/NotFound.vue */ "./resources/js/view/NotFound.vue");
+
+
+vue__WEBPACK_IMPORTED_MODULE_0__["default"].use(vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]);
+
+var Home = (__webpack_require__(/*! ../view/Home.vue */ "./resources/js/view/Home.vue")["default"]);
+
+var About = (__webpack_require__(/*! ../view/About.vue */ "./resources/js/view/About.vue")["default"]);
+
+
+var routes = [{
+  path: '/main',
+  component: Home
+}, {
+  path: '/about',
+  component: About
+}, {
+  path: '*',
+  component: _view_NotFound_vue__WEBPACK_IMPORTED_MODULE_2__["default"]
+}];
+var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
+  mode: 'history',
+  //Untuk menghilangkan # di URL
+  routes: routes
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (router);
 
 /***/ }),
 
