@@ -2142,9 +2142,9 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
 /* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
+/* harmony import */ var _view_NotFound_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./view/NotFound.vue */ "./resources/js/view/NotFound.vue");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-window.Vue = (__webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js")["default"]);
 
 
 vue__WEBPACK_IMPORTED_MODULE_0__["default"].use(vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]);
@@ -2154,9 +2154,9 @@ vue__WEBPACK_IMPORTED_MODULE_0__["default"].component('footer-component', (__web
 
 var Home = (__webpack_require__(/*! ./view/Home.vue */ "./resources/js/view/Home.vue")["default"]);
 
-var About = (__webpack_require__(/*! ./view/About.vue */ "./resources/js/view/About.vue")["default"]);
+var About = (__webpack_require__(/*! ./view/About.vue */ "./resources/js/view/About.vue")["default"]); // const NotFound = require('./view/NotFound.vue').default
 
-var NotFound = (__webpack_require__(/*! ./view/NotFound.vue */ "./resources/js/view/NotFound.vue")["default"]);
+
 
 var routes = [{
   path: '/main',
@@ -2166,7 +2166,7 @@ var routes = [{
   component: About
 }, {
   path: '*',
-  component: NotFound
+  component: _view_NotFound_vue__WEBPACK_IMPORTED_MODULE_2__["default"]
 }];
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   mode: 'history',

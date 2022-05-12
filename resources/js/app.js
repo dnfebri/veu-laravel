@@ -1,6 +1,5 @@
 require('./bootstrap');
 
-window.Vue = require('vue').default;
 import Vue from 'vue';
 import VueRouter from 'vue-router'
 Vue.use(VueRouter)
@@ -12,7 +11,8 @@ Vue.component('footer-component', require('./components/footer.vue').default);
 // const { default: VueRouter } = require('vue-router')
 const Home = require('./view/Home.vue').default
 const About = require('./view/About.vue').default
-const NotFound = require('./view/NotFound.vue').default
+// const NotFound = require('./view/NotFound.vue').default
+import NotFound from './view/NotFound.vue'
 
 const routes = [
     {
