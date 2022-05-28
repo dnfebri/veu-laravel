@@ -8,7 +8,7 @@
       <footer-component></footer-component>
     </div>
   </div>
-@push('style')
-  <script src="{{ asset('js/app.js') }}"></script>
+@push('script')
+  <script src="{{ asset('js/app.js') }}" defer></script>
 @endpush
 </x-layoutApp>

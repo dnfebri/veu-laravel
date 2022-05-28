@@ -2223,7 +2223,7 @@ var routes = [{
   path: '/about',
   component: About
 }, {
-  path: '/user/:name',
+  path: '/user/:name?',
   component: _view_User_vue__WEBPACK_IMPORTED_MODULE_2__["default"]
 }, {
   path: '*',
@@ -20298,8 +20298,14 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("h1", [
-    _vm._v("Hello User " + _vm._s(_vm.$route.params.name) + "."),
+  return _c("div", [
+    _vm.$route.params.name
+      ? _c("section", [
+          _c("h1", [
+            _vm._v("Hello User " + _vm._s(_vm.$route.params.name) + "."),
+          ]),
+        ])
+      : _c("section", [_c("h1", [_vm._v("Daftar User")])]),
   ])
 }
 var staticRenderFns = []

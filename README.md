@@ -14,7 +14,7 @@
 - video #10 - Mode History : Done
 - video #11 - Export Router : Done
 - video #12 - Route Dinamic : Done
-- video #13 - Paremeter Optional
+- video #13 - Paremeter Optional : Done
 - video #14 - Props & Route Name
 - video #15 - List User
 - video #16 - Pages Profile
