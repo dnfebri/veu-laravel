@@ -13,3 +13,12 @@
 - video #9 - Heading Error : Done
 - video #10 - Mode History : Done
 - video #11 - Export Router : Done
+- video #12 - Route Dinamic : Done
+- video #13 - Paremeter Optional
+- video #14 - Props & Route Name
+- video #15 - List User
+- video #16 - Pages Profile
+- video #17 - Route Push
+- video #18 - Link Aktive Class
+- video #19 - Into Database
+- video #20 - Seting Databases

@@ -4,6 +4,7 @@ Vue.use(VueRouter)
 
 const Home = require('../view/Home.vue').default
 const About = require('../view/About.vue').default
+import User from '../view/User.vue'
 import NotFound from '../view/NotFound.vue'
 
 const routes = [
@@ -14,6 +15,10 @@ const routes = [
     {
         path: '/about',
         component: About
+    },
+    {
+        path: '/user/:name',
+        component: User
     },
     {
         path: '*',

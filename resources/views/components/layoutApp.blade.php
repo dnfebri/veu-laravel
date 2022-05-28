@@ -19,9 +19,9 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     @stack('style')
+    @stack('script')
 </head>
 <body>
     {{ $slot }}
-    @stack('script')
 </body>
 </html>

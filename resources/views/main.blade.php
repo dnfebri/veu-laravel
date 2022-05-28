@@ -8,6 +8,7 @@
       <footer-component></footer-component>
     </div>
   </div>
-
+@push('style')
   <script src="{{ asset('js/app.js') }}"></script>
+@endpush
 </x-layoutApp>
