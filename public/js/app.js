@@ -2154,8 +2154,30 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  props: ['name']
+  props: ['name'],
+  data: function data() {
+    return {
+      users: [{
+        id: 1,
+        name: 'nama 1'
+      }, {
+        id: 2,
+        name: 'nama 2'
+      }, {
+        id: 3,
+        name: 'nama 3'
+      }, {
+        id: 4,
+        name: 'nama 4'
+      }]
+    };
+  }
 });
 
 /***/ }),
@@ -20354,7 +20376,19 @@ var render = function () {
       ? _c("section", [
           _c("h1", [_vm._v("Hello User " + _vm._s(_vm.name) + ".")]),
         ])
-      : _c("section", [_c("h1", [_vm._v("Daftar User")])]),
+      : _c("section", [
+          _c("h1", [_vm._v("Daftar User")]),
+          _vm._v(" "),
+          _c(
+            "ul",
+            _vm._l(_vm.users, function (user) {
+              return _c("li", { key: user.id }, [
+                _vm._v("\n        " + _vm._s(user.name) + "\n      "),
+              ])
+            }),
+            0
+          ),
+        ]),
   ])
 }
 var staticRenderFns = []
