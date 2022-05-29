@@ -2,12 +2,13 @@
   <div>
     <section v-if="name">
       <h1>Hello User {{name}}.</h1>
+      <router-link :to="{name: 'User'}">Kembali</router-link>
     </section>
     <section v-else>
       <h1>Daftar User</h1>
       <ul>
         <li v-for="user in users" :key="user.id">
-          {{user.name}}
+          <router-link :to="profile_url(user.name)">{{user.name}}</router-link>
         </li>
       </ul>
     </section>
@@ -19,11 +20,16 @@
     data() {
       return {
         users: [
-          {id: 1, name: 'nama 1'},
-          {id: 2, name: 'nama 2'},
-          {id: 3, name: 'nama 3'},
-          {id: 4, name: 'nama 4'}
+          {id: 1, name: 'Nama_1'},
+          {id: 2, name: 'Nama_2'},
+          {id: 3, name: 'Nama_3'},
+          {id: 4, name: 'Nama_4'}
         ]
+      }
+    },
+    methods: {
+      profile_url(name) {
+        return '/user/' + name.toLowerCase()
       }
     }
   }
