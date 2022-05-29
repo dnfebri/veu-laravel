@@ -18,7 +18,7 @@
 - video #14 - Props & Route Name : Done
 - video #15 - List User : Done
 - video #16 - Pages Profile : Done
-- video #17 - Route Push
+- video #17 - Route Push : Done
 - video #18 - Link Aktive Class
 - video #19 - Into Database
 - video #20 - Seting Databases
