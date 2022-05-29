@@ -22,3 +22,13 @@
 - video #18 - Link Aktive Class : Done
 - video #19 - Into Database
 - video #20 - Seting Databases
+- video #21 - Database Migration
+- video #22 - Database Seeding
+- video #23 - Generate Data
+- video #24 - Query Builder
+- video #25 - Response JSOn
+- video #26 - Penggunaan Axios
+- video #27 - Fetch API
+- video #28 - Component User
+- video #29 - Component Profile
+- video #30 - Eloquen ORM
