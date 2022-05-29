@@ -2,7 +2,7 @@
   <div>
     <section v-if="username">
       <h1>Hello User {{username}}.</h1>
-      <router-link :to="{name: 'User'}">Kembali</router-link>
+      <router-link :to="{name: 'User'}" class="bg-yellow-500">Kembali</router-link>
     </section>
     <section v-else>
       <h1>Daftar User</h1>

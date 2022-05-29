@@ -31,6 +31,7 @@ const routes = [
 ]
 
 const router = new VueRouter({
+    linkActiveClass: 'active',
     mode: 'history', //Untuk menghilangkan # di URL
     routes
 })

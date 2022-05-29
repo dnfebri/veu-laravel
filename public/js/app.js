@@ -2299,6 +2299,7 @@ var routes = [{
   component: _view_NotFound_vue__WEBPACK_IMPORTED_MODULE_3__["default"]
 }];
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
+  linkActiveClass: 'active',
   mode: 'history',
   //Untuk menghilangkan # di URL
   routes: routes
@@ -20394,9 +20395,11 @@ var render = function () {
           [
             _c("h1", [_vm._v("Hello User " + _vm._s(_vm.username) + ".")]),
             _vm._v(" "),
-            _c("router-link", { attrs: { to: { name: "User" } } }, [
-              _vm._v("Kembali"),
-            ]),
+            _c(
+              "router-link",
+              { staticClass: "bg-yellow-500", attrs: { to: { name: "User" } } },
+              [_vm._v("Kembali")]
+            ),
           ],
           1
         )
