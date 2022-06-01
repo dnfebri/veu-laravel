@@ -20,10 +20,10 @@
 - video #16 - Pages Profile : Done
 - video #17 - Route Push : Done
 - video #18 - Link Aktive Class : Done
-- video #19 - Into Database
-- video #20 - Seting Databases
-- video #21 - Database Migration
-- video #22 - Database Seeding
+- video #19 - Into Database : Done
+- video #20 - Seting Databases : Done
+- video #21 - Database Migration : Done
+- video #22 - Database Seeding : Done
 - video #23 - Generate Data
 - video #24 - Query Builder
 - video #25 - Response JSOn
