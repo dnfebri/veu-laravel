@@ -24,9 +24,9 @@
 - video #20 - Seting Databases : Done
 - video #21 - Database Migration : Done
 - video #22 - Database Seeding : Done
-- video #23 - Generate Data
-- video #24 - Query Builder
-- video #25 - Response JSOn
+- video #23 - Generate Data : Done
+- video #24 - Query Builder : Done
+- video #25 - Response JSOn : Done
 - video #26 - Penggunaan Axios
 - video #27 - Fetch API
 - video #28 - Component User
